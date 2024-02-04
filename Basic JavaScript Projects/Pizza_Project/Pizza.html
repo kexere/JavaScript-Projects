@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Papa Carlos Pizza</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="width=device-width,initial-scale=1.0" name="viewport">
+        <script src="Pizza_Javascript/Pizza.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css">
+        <link href='https://fonts.googleapis.com/css?family=Sedgwick Ave' rel='stylesheet'>
+    </head>
+    <body>
+        <!-- NAV-->
+        <div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#about"><li>ABOUT</li></a>
+					<a href="#order"><li>ORDER</li></a>
+					<a href="#cart"><li>CART</li></a>
+				</ul>
+			</div>
+		</div>
+        <!--END NAV-->
+
+        <!--ABOUT-->
+        <div id="about">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">Papa Carlos Pizza</span>
+				</div>
+			</div>
+		</div>
+        <!--END ABOUT-->
+
+        <section id="order">
+        <div id="menuBG">
+            <a href="#" type="button" onclick="getReceipt()" id="btnOrder">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Place Order
+            </a>
+            <form id="frmMenu">
+                <div class="grid-item">
+                    <h3>Size</h3>
+                    <input class="size" type="radio" name="Size" value="Personal Pizza">Personal Pizza....................£6.00<br>
+                    <input class="size" type="radio" name="Size" value="Small Pizza">Small Pizza...........................£8.00<br>
+                    <input class="size" type="radio" name="Size" value="Medium Pizza">Medium Pizza...................£10.00<br>
+                    <input class="size" type="radio" name="Size" value="Large Pizza">Large Pizza.......................£14.00<br>
+                    <input class="size" type="radio" name="Size" value="Extra Large Pizza">Extra Large Pizza........£16.00<br>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Crust</h3>
+                    <input class="crust" type="radio" name="Crust" value="Regular Crust">Regular Crust<br>
+                    <input class="crust" type="radio" name="Crust" value="Garlic Butter Crust">Garlic Butter Crust<br>
+                    <input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust">Cheese Stuffed Crust<br>
+                    <input class="crust" type="radio" name="Crust" value="Sausage Stuffed Crust">Sausage Stuffed Crust<br>
+                    <input class="crust" type="radio" name="Crust" value="House Special Crust">House Special Crust<br>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Sauce</h3>
+                    <input class="sauce" type="radio" name="Sauce" value="Barbeque Sauce">Barbeque Sauce<br>
+                    <input class="sauce" type="radio" name="Sauce" value="Ketchup">Ketchup<br>
+                    <input class="sauce" type="radio" name="Sauce" value="Tomatoe Sauce">Tomatoe Sauce<br>
+                    <input class="sauce" type="radio" name="Sauce" value="No Sauce">No Sauce<br>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Cheese</h3>
+                    <input class="cheese" type="radio" name="Cheese" value="Regular Cheese">Regular Cheese<br>
+                    <input class="cheese" type="radio" name="Cheese" value="Extra Cheese">Extra Cheese<br>
+                    <input class="cheese" type="radio" name="Cheese" value="No Cheese">No Cheese<br>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Vegetables</h3>
+                    <input class="toppings" type="checkbox" name="Topping" value="Mushrooms">Mushrooms<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Onions">Onions<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Tomatoes">Tomatoes<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Olives">Olives<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Green peppers">Green peppers<br>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Meats</h3>
+                    <input class="toppings" type="checkbox" name="Topping" value="Pepperoni">Pepperoni<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Sausage">Sausage<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Canadian Bacon">Canadian Bacon<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Ground Beef">Ground Beef<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Anchovy">Anchovy<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Chicken">Chicken<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Salami">Salami<br>
+                </div>
+            </form>
+            <div id="cart">
+                <div id="showText"></div>
+                <div id="totalPrice"></div>
+            </div>
+        </div>
+        </section>
+    </body>
+</html>
