@@ -1,3 +1,21 @@
 # JavaScript-Projects
 
-This is a display of projects that I made using JavaScript
+These are some small projects I made using JavaScript.
+
+## Projects
+
+* Pizza Menu
+* Tic-Tac-Toe Game
+* Calculator
+
+### Pizza Menu
+
+This project is a maneu used to order pizza with a various selection of toppings. It then takes the input information and calculated a price for the order.
+
+### Tic-Tac-Toe Game
+
+The classic game of tic-tac-tie. It randomly rolls dice to select which of the two players goes first and then users are off playing the classic game. Users can decide which token each player wants to use and the winner is celebrated with music and flashing lights.
+
+### Calculator
+
+A basic 4 function calculator. Users can add, substract, multiply, and divide on a sleek web version of a calculator.
